@@ -4,7 +4,7 @@ import 'package:news_app/models/articleModel.dart';
 class newsTile extends StatelessWidget {
   const newsTile({super.key, required this.article});
 
-  final articlsModel article;
+  final articelModel article;
 
   @override
   Widget build(BuildContext context) {

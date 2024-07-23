@@ -3,6 +3,7 @@ import 'package:news_app/models/categoryModel.dart';
 import 'package:news_app/widgets/categoryListView.dart';
 import 'package:news_app/widgets/categoryCard.dart';
 import 'package:news_app/widgets/newsListView.dart';
+import 'package:news_app/widgets/newsListViewBuilder.dart';
 import 'package:news_app/widgets/newsTile.dart';
 
 class homeNews extends StatelessWidget {
@@ -39,7 +40,7 @@ class homeNews extends StatelessWidget {
                 height: 40,
               ),
             ),
-            newsListView(),
+            newsListViewBuilder(),
           ],
         ),
       ),

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-class articlsModel {
+class articelModel {
   final String? image;
   final String titel;
   final String? subtitel;
 
-  articlsModel(this.image, this.titel, this.subtitel);
+  articelModel(this.image, this.titel, this.subtitel);
 }
