@@ -5,7 +5,9 @@ import 'package:news_app/services/newsServices.dart';
 import 'package:news_app/widgets/newsListView.dart';
 
 class newsListViewBuilder extends StatefulWidget {
-  newsListViewBuilder({super.key});
+  newsListViewBuilder({super.key, required this.category});
+
+  final String category;
 
   @override
   State<newsListViewBuilder> createState() => _newsListViewBuilderState();
@@ -16,7 +18,7 @@ class _newsListViewBuilderState extends State<newsListViewBuilder> {
   @override
   void initState() {
     // TODO: implement initState
-    future = newsService(Dio()).getgeneralnews();
+    future = newsService(Dio()).getTopHeadlines(category: widget.category);
   }
 
   Widget build(BuildContext context) {

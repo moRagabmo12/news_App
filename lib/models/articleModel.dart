@@ -6,4 +6,9 @@ class articelModel {
   final String? subtitel;
 
   articelModel(this.image, this.titel, this.subtitel);
+
+  factory articelModel.jusonModel(juson) {
+    return articelModel(
+        juson['urlToImage'], juson['title'], juson['description']);
+  }
 }
